@@ -1,9 +1,12 @@
 ///<reference types = "Cypress"/>
 describe('The sanity test suite for Travel site', () => {
-    it('navigate to the main page', () => {
-      cy.visit('http://localhost:3000')
-      cy.url().should('eq', 'http://localhost:3000/')
-    })
+    
+  before(()=>{
+    cy.visit('http://localhost:3000')
+        cy.url().should('eq', 'http://localhost:3000/')
+  })  
+  
+  
 
      //Address/Going to box
     it('verify Address/Going to box', () => {
