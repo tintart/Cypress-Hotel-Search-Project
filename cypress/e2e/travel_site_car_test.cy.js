@@ -7,8 +7,7 @@ describe('The test for Travel site, car button', () => {
     const drop_off = ':nth-child(4) > :nth-child(1) > .input-group > .input--style-1';
     const car_group_list = '[name="car-group"]';
     const driver_age = '[name="driver-age"]';
-    // const economy_radio_button = '[id=economy]';
-    // const f_class_radio_button = '[id=f_class]';
+    
     
     before(()=>{
         cy.visit('http://localhost:3000')
